@@ -1,0 +1,32 @@
+Hablu is now in a restaurant named “ChapX”. He would like to offer you some chicken chap for free. Will you please agree to have it?
+
+Well, not in free actually. You have to do a little work for Hablu. His friends are also waiting for having chicken chap. He has some friends sitting on a restaurant on a straight line. They are indexed by 1, 2, 3, ….. N gradually. His friends are bit weird. While they order chaps they will order for a range of persons. That is, the order will be like “Please bring X chaps for each persons indexed by L – R i.e. for persons L, L+1, L+2, ….. , R-1, R”.
+
+The waiter of “ChapX” restaurant is now in trouble. He gave Hablu the order details and asked him to calculate the number of chaps each of his friends ate. Hablu is a bit busy in chatting with them. That’s why He would like you to help the waiter.
+
+Input Format
+
+Input starts with an integer T that denotes the number of test cases.
+Each case starts with two integers N and Q denotes number of friends Hable has and number of orders the waiter enlisted.
+The next Q lines contains three integers L, R, X denotes the starting index of person, the ending index of person, and the amount of chaps the waiter should serve.
+
+Constraints
+
+1 <= T <=10
+1 <= N, Q <= 10^5
+1 <= L, R <= N
+1 <= X <= 10^9
+
+Output Format
+
+For each test case you need to print the case number in format “Case Y: ” where Y is the case number followed by N space separated integers which are the amount of chaps ordered by my friends in a single line. See the samples for further clarification.
+
+Sample Input 0
+
+1
+3 2
+1 3 5
+2 3 2
+Sample Output 0
+
+Case 1: 5 7 7
