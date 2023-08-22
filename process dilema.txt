@@ -1,0 +1,43 @@
+Given n process ( P1, P2, P3, …., Pi…., Pn ). For every process Pi we will give you the following information:
+
+The id of the process (Ii)
+The time when the process appears (ai)
+The total time to complete the process after the process start executing (ti)
+Note that:
+
+All process id will be unique.
+The process which appears first will start executing first.
+If two process appears at the same time, then process with less executing time will start executing first.
+If 2 & 3 is same for some process, then process with lower id will start executing first.
+No process will start executing before it’s previous process completed execution.
+If a process start executing at time T and the total execution time for that process is ti, then the process will be completed at time T + ti -1.
+Check the image in explanation section for more clarity.
+
+You will be given m queries. In each query you will be given a time Qj, you have to print the id number of the running process that time. If there is no process running that time print -1.
+
+Input Format
+
+In the first line you will be given two integers n (Number of process) and m (Number of queries). In the next following n lines, each line describes a process information formatted as “Ii ai ti”. In the next line there will be an array Q containing m integers.
+
+Constraints
+
+1 <= n, m <= 3*105
+1 <= Ii <= n
+1 <= ai, ti <= 1012
+1 <= Qj <= 1018
+
+Output Format
+
+For each query you have to print the id number of the executing process. If there is no process running that time, then print -1. After each query you have to print a space. See the sample I/O for better understanding.
+
+Sample Input 0
+
+4 6
+3 3 2
+2 3 3
+1 3 3
+4 12 1
+10 9 3 1 5 11
+Sample Output 0
+
+2 2 3 -1 1 -1
