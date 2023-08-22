@@ -1,0 +1,41 @@
+A prefix P of a given string S is any leading contiguous part of that string S. And a suffix of the string S is any trailing contiguous part of that string S. A proper prefix is a prefix which is not equal to the original string and a proper suffix is a suffix which is not equal to the original string. For example, a string S = “abcabc”. Prefixes of S are “a”, “ab”, “abc”, “abca”, “abcab” and “abcabc”. Suffixes of S are “c”, “bc”, “abc”, and “cabc”, “bcabc”, and “abcabc”. Among them, “abcabc” is not a proper prefix and proper suffix.
+
+Now consider a string can have many prefixes and we can consider each prefix an individual string. So, each prefix of a string can have its own prefixes and suffixes.
+
+The score of a prefix P of the string S is the length of the longest proper suffix of the P that is also a proper prefix of P. The score of a string S is the summation of scores of all the prefixes of that string.
+
+For example, S = “ababa”. One of its prefixes is P = “abab”. Now P has score 2 which is the longest proper suffix length “ab” which is also the proper prefix “ab”. Same procedure applies for all prefixes of S.
+
+Hablu’s brain got hang with this problem. And he asked you to help him calculate the score of string S.
+
+So, you will be given a string S. You have to print the score of that string S.
+
+Input Format
+
+The first line contains one integer t, the number of test cases. Each test case contains two line:
+First line contains an integer n which is the length of the string S and second line contains the string S containing only lowercase latin alphabets.
+It is guaranteed that the sum of the length n of strings over all test cases does not exceed 105.
+
+Constraints
+
+1 ≤ t ≤ 100
+1 ≤ n ≤ 105
+
+Output Format
+
+For each test case, print a single integer which is the score of the string for that case in a separate line. It is guarenteed that output will always fit into 64 bit integer.
+
+Sample Input 0
+
+3
+5
+ababa
+6
+abcdef
+7
+aaabbba
+Sample Output 0
+
+6
+0
+4
